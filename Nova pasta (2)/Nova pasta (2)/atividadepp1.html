@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Previsão Regional - Clima Brasil</title>
+  <link rel="stylesheet" href="atividadepp1.css">
+</head>
+<body>
+
+  <!-- Acessibilidade -->
+  <div class="acessibilidade">
+    <a href="#">Ir para o conteúdo</a>
+    <a href="#">Ir para o menu</a>
+    <a href="#">Ir para a busca</a>
+    <a href="#">Ir para o rodapé</a>
+  </div>
+
+  <!-- Cabeçalho -->
+  <header>
+    <div class="logo-container">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Weather_icon_-_sun_and_cloud.svg" alt="Logo Clima">
+      <div class="titulo">
+        <h1>CLIMA BRASIL</h1>
+        <h2>PREVISÃO REGIONAL SEMANAL</h2>
+        <p>Boletim Meteorológico</p>
+      </div>
+    </div>
+
+    <div class="busca">
+      <input type="text" placeholder="Buscar no site">
+      <button>🔍</button>
+    </div>
+  </header>
+
+  <!-- Menu principal -->
+  <nav class="menu">
+    <ul>
+      <li><a href="#">Início</a></li>
+      <li><a href="#">Centro-Oeste</a></li>
+      <li><a href="#">Sudeste</a></li>
+      <li><a href="#">Norte</a></li>
+      <li><a href="#">Nordeste</a></li>
+      <li><a href="#">Contato</a></li>
+    </ul>
+  </nav>
+
+  <!-- Conteúdo principal -->
+  <main>
+    <section class="destaque">
+      <div class="texto-destaque">
+        <h2>Previsão de Chuvas — Semana de 22 a 25 de Setembro de 2025</h2>
+        <p>Confira abaixo o resumo meteorológico detalhado por região do Brasil.</p>
+      </div>
+    </section>
+
+    <article class="conteudo">
+      <h3>Região Centro-Oeste</h3>
+      <p>Na Região Centro-Oeste, o avanço de um sistema frontal deve favorecer a ocorrência de tempestades em parte do Mato Grosso do Sul, Mato Grosso, Goiás e Distrito Federal, especialmente entre a segunda-feira (22/09/2025) e a quarta-feira (24/09/2025). O volume de chuva previsto deve variar entre 10 mm e 20 mm. Nessas áreas, não se descarta a possibilidade de chuvas fortes, rajadas de vento, incidência de raios e queda de granizo em pontos localizados. A partir da quinta-feira (25/09/2025), as condições para ocorrência de chuva devem diminuir em grande parte do Centro-Oeste, apenas com possibilidade de chuvas isoladas. Com o avanço de áreas de instabilidade, a umidade do ar deve aumentar sobre a Região ao longo da semana.</p>
+
+      <h3>Região Sudeste</h3>
+      <p>Na Região Sudeste, o avanço de um sistema frontal deve provocar aumento das chuvas no decorrer da semana, os maiores volumes devem se concentrar entre São Paulo, Rio de Janeiro, Espírito Santo e sul de Minas Gerais, com acumulados de até 40 mm. Nessas áreas, existe a possibilidade de tempestades, com rajadas de vento e queda de granizo em áreas localizadas, principalmente até quarta-feira (24/09/2025). Nas demais áreas da Região, há possibilidade apenas de chuvas localizadas ao longo da semana. Com o avanço da chuva sobre o Sudeste, a umidade do ar deve aumentar em grande parte da Região.</p>
+
+      <h3>Região Norte</h3>
+      <p>Nesta semana, a combinação de alta umidade, calor e circulação dos ventos favorece a presença da formação de áreas de instabilidade e formação de nuvens carregadas na Região Norte. Os maiores volumes de chuva são esperados entre o Amazonas e Rondônia, onde os acumulados podem ultrapassar os 100 mm, especialmente em áreas do oeste do Amazonas. Já no Tocantins, sul do Pará, Acre e Roraima o volume médio de chuva não deve ultrapassar 20 mm. Entre o norte do Pará e Amapá, a previsão é de tempo seco na maior parte das áreas, com possibilidade apenas de chuvas isoladas.</p>
+
+      <h3>Região Nordeste</h3>
+      <p>Ao longo da semana, o tempo deve permanecer seco e sem chuva em grande parte do interior da Região Nordeste, com destaque para a Bahia, Piauí, região central do Ceará e oeste da Paraíba e Rio Grande do Norte. Nessas áreas, a umidade do ar pode ficar abaixo de 25%. Até quarta-feira (24/09/2025), áreas de instabilidade devem provocar chuvas isoladas sobre o sul e oeste da Bahia, sul do Maranhão e Piauí. A partir de quinta-feira (25/09/2025), a chuva deve ganhar força entre o litoral da Bahia e Sergipe.</p>
+    </article>
+
+    <!-- Código secreto -->
+    <section class="codigo-secreto">
+      <h4>Digite o código secreto</h4>
+      <input type="text" id="codigo" placeholder="Digite o código">
+      <button onclick="verificarCodigo()">Enviar</button>
+      <div id="grupo-1234" class="gif-group"></div>
+      <audio id="audio1" src="Áudio do WhatsApp de 2025-10-16 à(s) 16.37.44_d5aa2464.mp3"></audio>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>© 2025 Clima Brasil — Desenvolvido por Rickson.</p>
+  </footer>
+
+  <script>
+    function verificarCodigo() {
+      const c = "123";
+      const v = document.getElementById("codigo").value;
+      const a = document.getElementById("audio1");
+
+      if (v === c) {
+        a.play();
+      } else {
+        a.pause();
+        a.currentTime = 0;
+        alert("Código incorreto.");
+      }
+    }
+  </script>
+</body>
+</html>
